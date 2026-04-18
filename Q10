@@ -1,0 +1,16 @@
+#Alice is driving from her home to her office which is A kilometers away and will take her X hours to reach. Bob is driving from his home to his office which is 
+B kilometers away and will take him Y hours to reach. Determine who is driving faster, else, if they are both driving at the same speed print EQUAL.
+
+
+
+t=int(input())
+for i in range(t):
+    A,X,B,Y=map(int,input().split())
+    a=A/X
+    b=B/Y 
+    if a>b:
+        print("ALICE")
+    elif b>a:
+        print("BOB")
+    else:
+        print("EQUAL")
