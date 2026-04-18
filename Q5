@@ -1,0 +1,13 @@
+#Chef has N candies. He has to distribute them to exactly M of his friends such that each friend gets equal number of candies and each friend gets even number of candies. Determine whether it is possible to do so.
+
+
+
+
+
+t=int(input())
+for i in range(t):
+    N,M=map(int,input().split())
+    if(N/M)%2==0:
+        print("Yes")
+    else:
+        print("No")
