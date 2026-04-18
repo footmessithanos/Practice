@@ -1,0 +1,11 @@
+#The Chessboard Distance for any two points (x1,y1) and (x2,y2) on a cartesian plane is defined as max(|x1-x2|,|y1-y2|). Output their distance given two points.
+
+
+
+
+t=int(input())
+for i in range(t):
+    X1,Y1,X2,Y2=map(int,input().split())
+    a=abs(X2-X1)
+    b=abs(Y2-Y1)
+    print(max(a,b))
